@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: swaps-coit
     steps:
       - uses: actions/checkout@v4
 
@@ -30,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: swaps-coit-jar
-          path: build/libs/*.jar
+          path: swaps-coit/build/libs/*.jar
