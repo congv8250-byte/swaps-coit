@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "swapscoit",
+  "version": "${version}",
+  "name": "Swaps Coit",
+  "description": "Press a key to instantly swap to a spear in your hotbar. Press again to swap back.",
+  "authors": ["Swaps Coit contributors"],
+  "contact": {
+    "homepage": "https://github.com/",
+    "sources": "https://github.com/",
+    "issues": "https://github.com/"
+  },
+  "license": "MIT",
+  "icon": "assets/swapscoit/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.swapscoit.SwapsCoitClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
